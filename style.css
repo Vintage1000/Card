@@ -35,6 +35,16 @@ body, .page-1, #page-2, .next-1 {
     width: 99vw; height: 85vh;
     margin-bottom: 2rem;
     position: relative;
+    opacity: 0;
+    animation: 1s showup ease-out forwards;
+}
+@keyframes showup{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .next-1 {
