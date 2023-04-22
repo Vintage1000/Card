@@ -115,7 +115,7 @@ h1 {
   content: "";
   width: 100%; height: 110%;
   
-  background: skyblue;
+  background-color: skyblue;
   border-radius: 1rem;
   opacity: .1;
   
