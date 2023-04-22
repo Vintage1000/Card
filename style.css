@@ -1,1 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Love+Light&family=Roboto:wght@300&display=swap');
 
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background: url(images/bg.jpg);
+  backdrop-filter: blur(1rem);
+  
+  position: relative;
+}
+
+
+body, .page-1, #page-2, .next-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.page-1 {
+    width: 99vw; height: 85vh;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.next-1 {
+  width: 20px; height: 20px;
+  color: white;
+  background: transparent;
+  font-size: 2rem;
+  text-decoration: none;
+  
+  justify-content: center;
+  
+  border-radius: 100%;
+  position: absolute;
+  bottom: 0; right: 0;
+  
+  z-index: 1;
+}
+
+
+h1 {
+  height: 20%;
+  font-size: 3rem;
+  font-family: 'Alkatra' , cursive;
+  position: relative;
+  /*transform: translate(25%, 350%);
+  /*position: absolute;
+  top: 50%; left: 50%;*/
+}
+/*h1::after {
+  content: "";
+  width: 90%; height: 20%;
+  background-color: white;
+  
+  position: absolute;
+  top: 10%; left: 10%;
+  
+  filter: blur(1rem);
+  opacity: .2;
+  
+  z-index: -1;
+}*/
+
+
+.floaters {
+  width: 100%; height: 40%;
+}
+
+.floater {
+  width: 100%; height: auto;
+  scale: .4; 
+  display: block;
+  filter: blur(.1rem);
+  
+  border-radius: 1rem;
+  
+  position: absolute;
+}
+
+.f1 {
+  transform: rotate(15deg) translate(-40%, 200%);
+}
+.f2 {
+  transform: rotate(-10deg) translate(40%, 300%);
+}
+.f3 {
+  transform: translate(0);
+}
+
+
+.letter {
+  width: 85%; height: 60%;
+  font-size: 22px;
+  font-family: 'Love Light', cursive;
+  position: relative;
+  padding: 1.25rem;
+}
+.letter::after {
+  content: "";
+  width: 100%; height: 110%;
+  
+  background: skyblue;
+  border-radius: 1rem;
+  opacity: .1;
+  
+  position: absolute;
+  top: 0; left: 0;
+  
+  z-index: -1;
+}
+
+
+
+#page-2 {
+  width: 99vw; height: 90vh;
+  margin-top: 2rem;
+}
+
+
+.container {
+  width: 95%; height: 100%;
+  display: flex;
+  gap: .5rem;
+}
+
+
+.farha-icons, .askar-icons {
+  width: 15%; height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  opacity: .6;
+}
+.farha-icons img {
+  width: 50px; height: 50px;
+  border-radius: 100%;
+}
+.askar-icons img {
+  width: 50px; height: 50px;
+  border-radius: 100%;
+}
+
+
+.chat {
+  width: 70%;
+  height: 100%;
+  background: #010100;
+  
+  position: relative;
+  overflow: hidden;
+}
+
+.button {
+  width: 100%;
+  background: #272627;
+  color: #5e5f5f;
+  
+  border: none;
+  border-bottom: 10px solid black;
+  border-radius: 1rem 1rem 0 0;
+  outline: none;
+  padding: .6rem;
+  
+  text-align: left;
+  
+  position: absolute;
+  bottom: 0; left: 0;
+}
+
+
+.left {
+  width: fit-content;
+  max-width: 75%;
+  background: #272627;
+  border-radius: 0 1rem 1rem 1rem;
+  padding: .4rem .7rem;
+  align-self: flex-start;
+}
+.right {
+  width: fit-content;
+  max-width: 75%;
+  background: #cc46d1;
+  border-radius: 1rem 0 1rem 1rem;
+  padding: .4rem .7rem;
+  align-self: flex-end;
+}
+
+.msgs {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    padding: .5rem;
+  
+  transform: translate(0, 50%);
+  
+  animation: scrolling 33s steps(33, end) infinite;
+}
+
+@keyframes scrolling {
+  to {
+    transform: translateY(-50%);
+  }
+}
+
+.next-1, #page-2 {
+  display: none;
+}
