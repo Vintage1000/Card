@@ -36,6 +36,7 @@ body, .page-1, #page-2, .next-1 {
     margin-bottom: 2rem;
     position: relative;
     opacity: 0;
+    animation: 1s showup ease-out forwards;
 }
 @keyframes showup{
   from {
