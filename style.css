@@ -224,6 +224,7 @@ h1 {
 .l2 {
   margin-top: 50px;
   height: fit-content;
+  display: none;
 }
 
 
