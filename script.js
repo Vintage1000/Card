@@ -15,7 +15,7 @@ const arrayLength = holders.length;
 var i = 0;
 
 function showUp() {
-  if (password.value == "abid abdul bari") {
+  if (password.value == "Abid Abdul Bari") {
     loginPage.classList.remove('login');
     loginPage.classList.add('disappear');
     
