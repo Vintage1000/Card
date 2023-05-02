@@ -31,12 +31,91 @@ body, .page-1, #page-2, .next-1 {
 }
 
 
-.page-1 {
-    width: 99vw; height: 85vh;
-    margin-bottom: 2rem;
-    position: relative;
-    opacity: 0;
-    animation: 1s showup ease-out forwards;
+.login {
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, .5);
+  
+  display: grid;
+  place-items: center;
+  
+  z-index: 5;
+}
+.disappear {
+  display: none;
+}
+
+
+.login-box {
+  width: fit-content; height: fit-content;
+  background: rgba(250, 63, 63, .4);
+  /*background: linear-gradient(45deg, 
+  rgba(250, 63, 63, .8),
+  rgba(250, 63, 63, .8),
+  rgba(0, 153, 153, .6),
+  rgba(250, 63, 63, .8),
+  rgba(250, 63, 63, .8)
+  );*/
+  border-radius: 1rem;
+  
+  display: grid;
+  place-items: center;
+  
+  opacity: .5;
+  padding: 1rem;
+  
+  position: relative;
+}
+
+.login-box p {
+  position: absolute;
+  top: 20;
+  
+  background: rgba(0, 0, 0, .5);
+  color: rgba(250, 23, 23, .9);
+  border-radius: 1rem;
+  
+  font-size: 1.2rem;
+  font-weight: 600;
+  
+  padding: .3rem 1rem;
+}
+
+#password {
+  border: none;
+  outline: none;
+  border-radius: 1rem;
+  background: black;
+  text-decoration: none;
+  margin: 3rem;
+  padding: 1rem;
+}
+
+#submit {
+  width: 50px; height: 50px;
+  background-image: url(images/maze.png);
+  background-size: cover;
+  border-radius: 100%;
+  border: none;
+  outline: none;
+  padding: .6rem;
+  /*color: white;
+  font-weight: 700;*/
+}
+
+ul li {
+  color: rgba(180, 180, 180, .7);
+}
+
+
+
+
+.pages {
+  display: none;
+  opacity: 0;
+}
+.showup {
+  display: visible;
+  animation: 1s showup ease-out forwards;
 }
 @keyframes showup{
   from {
@@ -45,6 +124,13 @@ body, .page-1, #page-2, .next-1 {
   to {
     opacity: 1;
   }
+}
+
+
+.page-1 {
+    width: 99vw; height: 85vh;
+    margin-bottom: 2rem;
+    position: relative;
 }
 
 .next-1 {
